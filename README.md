@@ -1,6 +1,6 @@
 # SunshineCTF 2017 Challenges
 
-This repo is to be used by challenge authors for to host the sources of SunshineCTF 2017 challenges.
+This repo is to be used by challenge authors to host the sources of SunshineCTF 2017 challenges.
 
 ## Directory Structure
 
