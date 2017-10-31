@@ -4,8 +4,8 @@ This repo is to be used by challenge authors to host the sources of SunshineCTF 
 
 ## Directory Structure
 
-* Challenge category (eg. `Web`, `Crypto`, `Pwn`)
-   * Points-Challenge (eg. `100-MyEasyChallenge`, `500-ThisIsLiterallyImpossible`)
+* Challenge category (e.g. `Web`, `Crypto`, `Pwn`)
+   * Points-Challenge (e.g. `100-MyEasyChallenge`, `500-ThisIsLiterallyImpossible`)
      * The challenge itself
 
 ## Required Files
