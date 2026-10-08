@@ -1,0 +1,31 @@
+version: "0.1"
+name: "The Oracle"
+author: vraelvrangr
+category: Crypto
+description: |-
+  We have captured an encrypted message and we need your help to decrypt it! We believe it may give us information as to what started this mess!
+
+  Here is the message, it is encrypted using AES-CBC and is base64-encoded:
+
+  `uRew7ow7HvGH1UF06hEiMqMENgH8A2HLpZbczI0TAFlRv87LI3F1GrBVwExYvcdykYD2laxRsDToBFrFtjp2vw==`
+
+  Through some other information gathering, we found out that whoever sent this message also likes using the following injection vector:
+
+  `WHAT_IN_THE_BOOM`
+
+  You can use the following connection to test if a message encrypted with the same key and injection vector is correctly padded. We are told that there is an attack vector that you can use to find the message with that information. It accepts messages in base64. Please help us! We must find this information!
+attribution: Written by vraelvrangr for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17402
+flags:
+  - "sun{I_b3t_Th3_0r4cL3_c0uLDNt_Pr3d1cT_Th3_f4110uT}"
+tags:
+  - "2017"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

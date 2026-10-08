@@ -1,0 +1,13 @@
+name: sun17-lowhigh
+
+services:
+  lowhigh:
+    build: .
+    image: sun17-lowhigh
+    container_name: sun17-lowhigh
+    restart: unless-stopped
+    ports:
+      - "17202:30002"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

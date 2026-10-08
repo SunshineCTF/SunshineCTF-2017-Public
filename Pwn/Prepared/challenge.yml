@@ -1,0 +1,23 @@
+version: "0.1"
+name: "Prepared"
+author: guyinatuxedo
+category: Pwn
+description: |-
+  When you live in the wasteland, you have to know what will happen.
+attribution: Written by guyinatuxedo for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17001
+flags:
+  - "sun{pr3d1ct_3very_p[]5s1bl3_scen@r10}"
+tags:
+  - "2017"
+files:
+  - ../../publish/Pwn/Prepared/prepared
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

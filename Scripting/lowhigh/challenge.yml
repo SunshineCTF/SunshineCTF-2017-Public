@@ -1,0 +1,18 @@
+version: "0.1"
+name: "Low High"
+author: vraelvrangr
+category: Scripting
+description: |-
+  Do you need to go lower or higher?
+attribution: Written by vraelvrangr for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17202
+flags:
+  - "sun{l1f3_Is_T00_b1n4ry_BE_lub3W4rM}"
+tags:
+  - "2017"
+state: visible

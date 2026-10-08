@@ -1,0 +1,23 @@
+version: "0.1"
+name: "Notetorious"
+author: C0deH4cker
+category: Pwn
+description: |-
+  Agent,
+
+  We have determined that Vladimir Putin uses an online note taking service called Notetorious. His username on this service is `vputin`. Your objective is to exfiltrate his secret notes.
+attribution: Written by C0deH4cker for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17003
+flags:
+  - "sun{this_challenge_was_inspired_by_evasi0n7's_AFC_exploit}"
+tags:
+  - "2017"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

@@ -1,0 +1,13 @@
+name: sun17-the_oracle
+
+services:
+  the_oracle:
+    build: .
+    image: sun17-the_oracle
+    container_name: sun17-the_oracle
+    restart: unless-stopped
+    ports:
+      - "17402:40002"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

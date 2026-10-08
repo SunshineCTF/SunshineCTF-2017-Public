@@ -1,0 +1,22 @@
+version: "0.1"
+name: "Nonlinear 1"
+author: leviathan
+category: Stego
+description: |-
+  We caught this transmission playing shortly after the bombs fell, and it's been playing ever since. We need the data they're sending out, but this isn't any morse code we've seen before. Can you help us?
+attribution: Written by leviathan for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+flags:
+  - "sun{th1s_1snt_m0rs3_c0d3}"
+tags:
+  - "2017"
+files:
+  - Attachments/nonlinear1.wav
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

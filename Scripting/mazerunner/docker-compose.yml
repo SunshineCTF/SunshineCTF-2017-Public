@@ -1,0 +1,13 @@
+name: sun17-mazerunner
+
+services:
+  mazerunner:
+    build: .
+    image: sun17-mazerunner
+    container_name: sun17-mazerunner
+    restart: unless-stopped
+    ports:
+      - "17203:30003"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

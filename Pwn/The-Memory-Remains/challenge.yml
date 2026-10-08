@@ -1,0 +1,23 @@
+version: "0.1"
+name: "The Memory Remains"
+author: guyinatuxedo
+category: Pwn
+description: |-
+  Atrocities that are witnessed in the wastelands are not easily forgotten.
+attribution: Written by guyinatuxedo for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17002
+flags:
+  - "sun{y37_th3_mem0RY_R3m@1n5}"
+tags:
+  - "2017"
+files:
+  - ../../publish/Pwn/The-Memory-Remains/the_memory_remains
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

@@ -1,0 +1,21 @@
+version: "0.1"
+name: "Vanity"
+author: m0niker_
+category: Crypto
+description: |-
+  You need to buy some things, and luckily the local merchant accepts Bitcoin! You found out he only checks that the first four characters of his address and the one you send the coins to. Can you make him think you are sending him the coins while they really go to yourself?
+attribution: Written by m0niker_ for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17401
+flags:
+  - "sun{a1waY5_ch3k__th0se_bits}"
+tags:
+  - "2017"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

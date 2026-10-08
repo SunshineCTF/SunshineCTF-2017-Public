@@ -1,0 +1,27 @@
+name: sun17-zombiedex
+
+services:
+  db:
+    build: db/
+    image: sun17-zombiedex-db
+    container_name: sun17-zombiedex-db
+    restart: unless-stopped
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 512
+  web-app:
+    depends_on:
+      - db
+    build: web-app/
+    image: sun17-zombiedex-web
+    container_name: sun17-zombiedex-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:17303:80"
+    environment:
+      DB_HOST: db
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

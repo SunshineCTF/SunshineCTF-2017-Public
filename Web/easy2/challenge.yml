@@ -1,0 +1,24 @@
+version: "0.1"
+name: "Easy2"
+author: kablaa
+category: Web
+description: |-
+  Plan ahead.
+
+  Heighten your situational awareness.
+
+  Dress in clothes that are common to the area where you are, or where you plan to go.
+
+  Avoid bright colors. Neutral will blend in. Choose grey over black or white or red.
+attribution: Written by kablaa for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: https://easy2.ctf.hackucf.org
+flags:
+  - "sun{n07HIn9_C4N_83_HiDD3n_Fr0m_4_h4X0R}"
+tags:
+  - "2017"
+state: visible

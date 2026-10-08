@@ -1,0 +1,19 @@
+version: "0.1"
+name: "Fallout Comrade"
+author: vraelvrangr
+category: Scripting
+description: |-
+  Hello, comrade!
+  Determine which numbers are real and which numbers are fake!
+attribution: Written by vraelvrangr for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17201
+flags:
+  - "sun{I_g1vE_u_nUM3r0_u_G1v3_m3_alt3Rn4TE_nUMEr0}"
+tags:
+  - "2017"
+state: visible

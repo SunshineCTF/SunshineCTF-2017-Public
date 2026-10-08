@@ -1,0 +1,18 @@
+version: "0.1"
+name: "Easy1"
+author: kablaa
+category: Web
+description: |-
+  Doom is upon us. We are surrounded by enemies on all sides. There is only one hope. Use your hacking skills to find it.
+attribution: Written by kablaa for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: https://easy1.ctf.hackucf.org
+flags:
+  - "sun{k4rEfUL_D0nT_H1T_y0uR_HE4dEr}"
+tags:
+  - "2017"
+state: visible

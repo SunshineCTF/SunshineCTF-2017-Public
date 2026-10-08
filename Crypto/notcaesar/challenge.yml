@@ -1,0 +1,22 @@
+version: "0.1"
+name: "Not Caesar"
+author: vraelvrangr
+category: Crypto
+description: |-
+  `xhy{m4f_mZvCHX_rU0_yFfAX_V4fx4s}`
+
+  It is not a Caesar cipher.
+attribution: Written by vraelvrangr for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+flags:
+  - "sun{v4e_vIcTUS_wH0_nEeDS_C4es4r}"
+tags:
+  - "2017"
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

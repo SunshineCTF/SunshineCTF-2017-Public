@@ -1,0 +1,18 @@
+version: "0.1"
+name: "Maze Runner"
+author: vraelvrangr
+category: Scripting
+description: |-
+  Find your way out of the mazes. Stay on an optimal path!
+attribution: Written by vraelvrangr for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17203
+flags:
+  - "sun{1Snt_l1f3_ReALly_JuST_On3_b1g_MaZ3}"
+tags:
+  - "2017"
+state: visible

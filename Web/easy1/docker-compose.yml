@@ -1,0 +1,13 @@
+name: sun17-easy1
+
+services:
+  easy1:
+    build: .
+    image: sun17-easy1
+    container_name: sun17-easy1
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:17301:80"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

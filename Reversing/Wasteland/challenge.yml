@@ -1,0 +1,25 @@
+version: "0.1"
+name: "Wasteland"
+author: guyinatuxedo
+category: Reversing
+description: |-
+  Life in the wasteland is hard, arduous, and unforgiving. Yet you must live it anyway.
+
+  **HINT: The assembly listing is taken from the 32-bit and 64-bit executables and is interspersed. You're looking at assembly code from two different executables from the same C source merged into one.**
+attribution: Written by guyinatuxedo for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17102
+flags:
+  - "sun{w@5t4land_i5 @_dang3r0u5_p1@c3}"
+tags:
+  - "2017"
+files:
+  - attachments/wasteland.asm
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

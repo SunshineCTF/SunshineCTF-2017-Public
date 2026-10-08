@@ -1,0 +1,23 @@
+version: "0.1"
+name: "Alternative Solution"
+author: guyinatuxedo
+category: Reversing
+description: |-
+  While in the wasteland, unexpected solutions are sometimes the only solutions.
+attribution: Written by guyinatuxedo for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+connection_info: nc ctf.hackucf.org 17101
+flags:
+  - "sun{50m3times yoU_h@v3_t0 get cr3@t1v3}"
+tags:
+  - "2017"
+files:
+  - ../../publish/Reversing/Alternative-Solution/alternative_solution
+solution:
+  path: writeup.md
+  state: hidden
+state: visible

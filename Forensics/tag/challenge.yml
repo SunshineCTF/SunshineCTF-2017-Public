@@ -1,0 +1,22 @@
+version: "0.1"
+name: "Tag"
+author: kablaa
+category: Forensics
+description: |-
+  You are surrounded by zombies on all sides. Blood and flesh that drip from their mouths. You run for cover in an abandoned building. As you huddle in terror under a delapitated desk your foot brushes against a small package. What could be inside???
+attribution: Written by kablaa for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: dynamic
+extra:
+  initial: 500
+  decay: 50
+  minimum: 100
+flags:
+  - "sun{phUn_1n_7h3_c0MPl373_l4ck_0f_5UN}"
+tags:
+  - "2017"
+files:
+  - attachments/tag.gz
+solution:
+  path: writeup.md
+  state: hidden
+state: visible
