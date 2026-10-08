@@ -1,21 +1,31 @@
-# SunshineCTF 2017 Challenges
+SunshineCTF 2017 Challenges
+-----
 
-This repo is to be used by challenge authors to host the sources of SunshineCTF 2017 challenges.
+This is the public release of the challenges from [SunshineCTF 2017](https://ctftime.org/event/449).
+Unless otherwise specified, all challenges are released under the [MIT license](LICENSE).
 
-## Directory Structure
+### Repo layout
 
-* Challenge category (e.g. `Web`, `Crypto`, `Pwn`)
-   * Points-Challenge (e.g. `100-MyEasyChallenge`, `500-ThisIsLiterallyImpossible`)
-     * The challenge itself
+Challenges are organized as `<Category>/<ChallengeName>`. Most challenge folders contain:
 
-## Required Files
+| File name        | Description
+|------------------|-------------
+| `description.md` | The challenge description as it was shown to players.
+| `README.md`      | Author notes: build/deploy info and files for players.
+| `writeup.md`     | The intended solution (spoilers!).
+| `flag.txt`       | The challenge's flag.
 
-| File name         | Description
-|-------------------|-------------
-| `description.md`  | Markdown formatted description as should be displayed to players on the challenge description page.
-| `README.md`       | Detailed information including a description of how the challenge works, steps to build and deploy this challenge, how to maintain it, and the intended solution. This will not be given to players.
-| `flag.txt`        | The challenge's flag in the format `sun{flag_goes_here}`. If the flag is of a format different than this, please mention this explicitly in your `README.md` file.
+### How to build/deploy the server-based challenges
 
-If a challenge has files that should be downloadable from the challenge description, create a subdirectory `attachments` and place the files there.
+Install the `pwnmake` command by following the instructions located at https://github.com/C0deH4cker/PwnableHarness.
 
-An example challenge is available in `Stego/100-Hello-Friend`.
+* To compile all binaries: `pwnmake`
+* To build and run Docker containers for all server-based challenges: `pwnmake docker-start` (stop them with `pwnmake docker-stop`)
+* To publish all build artifacts that should be distributed to players into the `publish` folder: `pwnmake publish`
+* To verify each server-based challenge by running its solver against a local container: `pwnmake check` (`pwnmake check-full` also runs the slow solvers)
+
+Each of these can be sped up by adding an argument like `-j8` to run it with 8
+parallel workers.
+
+[`ports.md`](ports.md) lists the port (and hostname, for web challenges) each server-based
+challenge uses on the archive at https://ctf.hackucf.org.

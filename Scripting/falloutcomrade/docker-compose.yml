@@ -1,0 +1,13 @@
+name: sun17-falloutcomrade
+
+services:
+  falloutcomrade:
+    build: .
+    image: sun17-falloutcomrade
+    container_name: sun17-falloutcomrade
+    restart: unless-stopped
+    ports:
+      - "17201:30001"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512

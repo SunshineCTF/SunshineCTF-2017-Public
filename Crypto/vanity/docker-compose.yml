@@ -1,0 +1,13 @@
+name: sun17-vanity
+
+services:
+  vanity:
+    build: .
+    image: sun17-vanity
+    container_name: sun17-vanity
+    restart: unless-stopped
+    ports:
+      - "17401:40001"
+    mem_limit: 256m
+    cpus: 1.0
+    pids_limit: 512

@@ -28,3 +28,15 @@ a.out
 *.pyc
 *.pyo
 __pycache__/
+
+# PwnableHarness build artifacts
+.build/
+.docker/
+default.Dockerfile
+
+# per-project build/publish symlinks created by `pwnmake check` (and PH 2.3.2)
+.build
+publish
+
+# pwntools cache (HOME is the workspace inside the pwnmake container)
+.cache/

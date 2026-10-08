@@ -1,0 +1,17 @@
+version: "0.1"
+name: "Zombiedex"
+author: kablaa
+category: Web
+description: |-
+  **HINT: Zombiedex queries a MySQL database**
+attribution: Written by kablaa for [SunshineCTF 2017](https://ctftime.org/event/449)
+type: standard
+value: 150
+connection_info: https://zombiedex.ctf.hackucf.org
+flags:
+  - "sun{k00kIEs_4re_4S_900d_4s_seSSi0n2}"
+  - "flag{k00kIEs_4re_4S_900d_4s_seSSi0n2}"
+tags:
+  - "sunshinectf-2017"
+  - "intermediate"
+state: visible

@@ -1,0 +1,13 @@
+name: sun17-notetorious
+
+services:
+  notetorious:
+    build: .
+    image: sun17-notetorious
+    container_name: sun17-notetorious
+    restart: unless-stopped
+    ports:
+      - "17003:20003"
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 512
